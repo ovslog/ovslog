@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вертикаль ОВС Логистикс</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#1e293b; --accent:#38bdf8; --text:#e2e8f0; --muted:#94a3b8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',Arial,sans-serif;background-color:var(--bg);background-image:url('emblem_pattern.png');background-repeat:repeat;color:var(--text);line-height:1.6;}
+  header{background:var(--card);padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;}
+  header .inner{max-width:1100px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;}
+  nav{display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
+  .nav-row{display:flex;gap:24px;}
+  header h1{font-size:1.4rem;color:var(--accent);}
+  nav a{color:var(--text);text-decoration:none;font-size:0.95rem;}
+  nav a:hover{color:var(--accent);}
+  .hero{text-align:center;padding:80px 5%;background:linear-gradient(180deg,var(--card),var(--bg));}
+  .hero p{color:var(--accent);font-size:1.6rem;font-weight:600;max-width:700px;margin:0 auto;}
+  section{padding:60px 5%;max-width:1100px;margin:0 auto;}
+  h3{font-size:1.6rem;margin-bottom:20px;color:var(--accent);}
+  .about-wrap{display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start;}
+  .about p{color:var(--muted);max-width:700px;flex:2;min-width:280px;}
+  .logo-block{flex:1;min-width:180px;max-width:220px;}
+  .ph{background:var(--card);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);overflow:hidden;}
+  .logo-block .ph{aspect-ratio:1/1;}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+  .gallery .ph{aspect-ratio:4/3;cursor:zoom-in;}
+  .ph img{width:100%;height:100%;object-fit:cover;}
+  .lightbox{position:fixed;inset:0;background:rgba(15,23,42,0.92);display:none;align-items:center;justify-content:center;z-index:200;cursor:zoom-out;padding:30px;}
+  .lightbox.active{display:flex;}
+  .lightbox img{max-width:92vw;max-height:92vh;border-radius:10px;object-fit:contain;}
+  .contact-wrap{display:flex;gap:40px;flex-wrap:wrap;}
+  form{flex:1;min-width:280px;max-width:500px;display:flex;flex-direction:column;gap:14px;}
+  .map-block{flex:1;min-width:280px;max-width:500px;}
+  .map-block iframe{width:100%;height:300px;border:0;border-radius:10px;}
+  .map-block a{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:0.95rem;}
+  input,textarea,select{padding:12px;border-radius:8px;border:1px solid #334155;background:var(--card);color:var(--text);font-size:1rem;}
+  input.invalid,textarea.invalid{border-color:#ef4444;color:#ef4444;}
+  textarea{min-height:120px;resize:vertical;}
+  button{padding:14px;border:none;border-radius:8px;background:var(--accent);color:#0f172a;font-weight:600;cursor:pointer;font-size:1rem;}
+  button:hover{opacity:0.9;}
+  footer{text-align:center;padding:30px;color:var(--muted);font-size:0.9rem;border-top:1px solid #1e293b;}
+  .status{font-size:0.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <h1>Вертикаль ОВС Логистикс</h1>
+    <nav>
+      <div class="nav-row">
+        <a href="mailto:ovslog@mail.ru">ovslog@mail.ru</a>
+        <a href="tel:+79015930738">+7 901 593 0738</a>
+      </div>
+      <a href="https://yandex.com/maps/213/moscow/house/ulitsa_generala_beloborodova_46s12/Z04YdQJlSUEOQFtvfXRzcnplZQ==/" target="_blank">Москва, ул. Генерала Белобородова, 46, стр. 12, этаж 3, офис 26</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <p>Перевозка негабаритных грузов, экспедирование грузов, автомобильные грузоперевозки, сопровождение.</p>
+</div>
+
+<section class="about" id="about">
+  <h3>О компании</h3>
+  <div class="about-wrap">
+    <p>
+      Мы осуществляем перевозки крупногабаритных и тяжеловесных грузов, организуем
+      сопровождение автомобилями прикрытия или патрульными ДПС. У нас собственный
+      парк трехосных тягачей Mercedes и низкорамных платформ!
+    </p>
+    <div class="logo-block">
+      <div class="ph"><img src="logo.png" alt="Логотип"></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h3>Фото</h3>
+  <div class="gallery">
+    <div class="ph"><img src="photos/photo1.jpg" alt="Фото 1"></div>
+    <div class="ph"><img src="photos/photo2.jpg" alt="Фото 2"></div>
+    <div class="ph"><img src="photos/photo3.jpg" alt="Фото 3"></div>
+    <div class="ph"><img src="photos/photo4.jpg" alt="Фото 4"></div>
+    <div class="ph"><img src="photos/photo5.jpg" alt="Фото 5"></div>
+    <div class="ph"><img src="photos/photo6.jpg" alt="Фото 6"></div>
+    <div class="ph"><img src="photos/photo7.jpg" alt="Фото 7"></div>
+    <div class="ph"><img src="photos/photo8.jpg" alt="Фото 8"></div>
+    <div class="ph"><img src="photos/photo9.jpg" alt="Фото 9"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Связаться с нами</h3>
+  <div class="contact-wrap">
+    <!-- Замени YOUR_FORM_ID на свой ID с formspree.io -->
+    <form action="https://formspree.io/f/mvzjvdno" method="POST" id="contactForm">
+      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" id="email" placeholder="Ваш email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Формат: имя@домен.ру" required>
+      <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___ ____" pattern="\+7\s\(\d{3}\)\s\d{3}\s\d{4}" title="Формат: +7 (999) 123 4567" value="+7 (" required>
+      <textarea name="message" id="message" placeholder="Сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+
+    <div class="map-block">
+      <!-- Замени координаты/адрес на свои -->
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=37.355006%2C55.823597&z=15&pt=37.355006,55.823597,pm2rdm" allowfullscreen></iframe>
+      <a href="https://yandex.ru/maps/?pt=37.355006,55.823597&z=15&l=map" target="_blank">Открыть офис на Яндекс Картах</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Вертикаль ОВС Логистикс. Все права защищены.
+</footer>
+
+
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  const email = document.getElementById('email');
+  email.addEventListener('blur', () => {
+    email.classList.toggle('invalid', !email.checkValidity());
+  });
+  email.addEventListener('input', () => {
+    if (email.checkValidity()) email.classList.remove('invalid');
+  });
+
+  const phone = document.getElementById('phone');
+  function getDigits(value) {
+    let d = value.replace(/\D/g, '');
+    if (d.startsWith('7') || d.startsWith('8')) d = d.slice(1);
+    return d.slice(0, 10);
+  }
+  function formatPhone(digits) {
+    let out = '+7 (';
+    out += digits.slice(0, 3);
+    if (digits.length >= 3) out += ') ';
+    out += digits.slice(3, 6);
+    if (digits.length >= 6) out += ' ';
+    out += digits.slice(6, 10);
+    return out;
+  }
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery .ph img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+
+  phone.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace' || e.key === 'Delete') {
+      e.preventDefault();
+      if (phone.selectionStart !== phone.selectionEnd) {
+        phone.value = formatPhone('');
+        return;
+      }
+      const digits = getDigits(phone.value).slice(0, -1);
+      phone.value = formatPhone(digits);
+    }
+  });
+  phone.addEventListener('input', () => {
+    phone.value = formatPhone(getDigits(phone.value));
+  });
+  phone.addEventListener('focus', () => {
+    if (!phone.value) phone.value = '+7 (';
+  });
+
+  const form = document.getElementById('contactForm');
+  const name = document.getElementById('name');
+  const message = document.getElementById('message');
+  [name, message].forEach(f => {
+    f.addEventListener('input', () => {
+      if (f.checkValidity()) f.classList.remove('invalid');
+    });
+  });
+  form.addEventListener('submit', (e) => {
+    let valid = true;
+    [name, email, phone, message].forEach(f => {
+      if (!f.checkValidity()) {
+        f.classList.add('invalid');
+        valid = false;
+      } else {
+        f.classList.remove('invalid');
+      }
+    });
+    if (!valid) e.preventDefault();
+  });
+</script>
+</body>
+</html>
